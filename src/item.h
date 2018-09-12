@@ -703,7 +703,7 @@ class item : public visitable<item>
 
         /** an item is about to become rotten when shelf life has nearly elapsed */
         bool is_going_bad() const {
-            return get_relative_rot() > 0.9;
+            return get_relative_rot() > 0.7;
         }
 
         /** returns true if item is now rotten after all shelf life has elapsed */
